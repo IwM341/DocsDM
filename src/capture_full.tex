@@ -1,0 +1,72 @@
+Полная скорость захвата это интеграл
+\begin{equation*}
+	\label{eq:capture_rate}
+	C_{+} = {\int{d^{3}\vec{r} \cdot d^{3}\vec{v}f_{k}\left( {r,v} \right) \cdot n_{p}f_{B}\left( {\vec{v}}_{1} \right)d^{3}{\vec{v}}_{1} \cdot \Gamma_{с}\left( \vec{v},{\vec{v}}_{1},r \right)}}
+\end{equation*}
+где
+
+\begin{equation*}
+	\label{eq:Gamma_def}
+	\Gamma_{с}\left( {\vec{v},{\vec{v}}_{1},r} \right) = {\int\limits_{v' < v_{esc}}{d^{3}{\vec{v}}\,'\delta\left( {E_{f} - E_{in}} \right) \cdot \frac{m_{k}^{3}\left| \mathcal{M} \right|^{2}}{64\pi^{2}m_{p}^{2}m_{k}^{2}}}}
+\end{equation*}
+а матричный элемент равен
+
+\begin{equation*}
+	\left| \mathcal{M} \right|^{2} = 16G_{F}^{2}m_{p}^{2}m_{k}^{2} \cdot \Phi\left( q^{2} \right)dF = 16g_{F}^{2}\frac{m_{k}^{2}}{m_{p}^{2}}\Phi dF
+\end{equation*}
+
+\begin{equation*}
+	dF = \begin{cases*}
+		1 &elastic \\
+		\cfrac{s^{2}}{3}I^{2}(n)dn & migdal\\
+		\cfrac{s^{2}}{3}I^{2}(\phi)\cfrac{d\phi}{2\pi} & ionization
+	\end{cases*}
+\end{equation*}
+
+\begin{equation*}
+	\Phi = \begin{cases*}
+		1 & scalar-scalar\\
+		\cfrac{- {q^{2}/2}}{m_{p}^{2}~or~m_{k}^{2}} & scalar-pseudoscalar\\
+		\cfrac{q^{4}/4}{m_{p}^{2}m_{k}^{2}} & pseudoscalar-pseudoscalar
+	\end{cases*}
+\end{equation*}
+
+Сечение ищется в системе ц.м. 
+\begin{align*}
+	\vec{V} = \frac{m_{p}{\vec{v}}_{1} + m_{k}\vec{v}}{m_{p} + m_{k}}\\
+	\vec{\nu} = \frac{m_{p}}{m_{p} + m_{k}}\left( {\vec{v} - {\vec{v}}_{1}} \right)
+\end{align*}
+
+\begin{equation*}
+	\vec{\nu} - {\vec{\nu}}\,' = \frac{m_{p}}{m_{p} + m_{k}}\left( {\vec{v} - {\vec{v}}\,' + \vec{v}_1^{\,\prime}- {\vec{v}}_{1}} \right) = \frac{m_{p}}{m_{p} + m_{k}}\left( {\vec{v} - {\vec{v}}\,'} \right)\left( {1 + \frac{m_{k}}{m_{p}}} \right) = \left( {\vec{v} - {\vec{v}}\,'} \right)
+\end{equation*}
+
+В такой замене переданный импульс равен
+\begin{equation*}
+	\vec{q} = m_{k}\left( \vec{\nu} - {\vec{\nu}}\,' \right)
+\end{equation*}
+
+Сечение соударений тогда равно
+\begin{equation*}
+	\Gamma_{с}\left( {\vec{v},{\vec{v}}_{1},r} \right) = \frac{m_{p}}{m_{k}\left( m_{p} + m_{k} \right)}4\pi\nu'd\vec{n}\,' \cdot \frac{m_{k}^{3}\left| \mathcal{M} \right|^{2}}{64\pi^{2}m_{p}^{2}m_{k}^{2}} = \nu' d\vec{n}\,'\frac{g_{F}^{2}}{\pi}\frac{m_{k}^{2}}{m_{p}^{3}\left( m_{p} + m_{k} \right)}\Phi dF
+\end{equation*}
+
+А общая скорость захвата имеет вид
+\begin{equation}
+	\label{eq:capture_rate_result}
+	C_+ = Vn_{\chi}{\overline{n}}_{p}\frac{g_{F}^{2}}{\pi}\frac{m_{k}^{2}}{m_{p}^{3}\left( {m_{p} + m_{k}} \right)}~d\xi \cdot f_{rm}\left( \alpha_{v} \right)d\alpha_{v} \cdot {\widetilde{n}}_{p}f_{B}^{rm}d\omega dc_{1} \cdot \nu' d\vec{n}\,'\Phi\left( q^{2} \right)dF
+\end{equation}
+
+Первая часть --- размерные множетели, вторая --- безразмерные части интгрирования методом монте-карло. $d\xi$ --- выбор координаты $r$, $f_{rm}\left( \alpha_{v} \right)d\alpha_{v}$ --- выбор скорости частицы т.м., ${\widetilde{n}}_{p}$ --- относительная концентрация мишеней в точке, $f_{B}^{rm}d\omega dc_{1}$ --- выбор скорости мишени, $\nu' d\vec{n}\,'\Phi\left( q^{2} \right)dF$ --- выбор выходной скорости.
+
+Итоговым результатом будет безразмерная скорость захвата $c_+$, тогда
+\begin{equation*}
+	C_+ = c_+ \left[ Vn_{\chi}{\overline{n}}_{p}\frac{g_{F}^{2}}{\pi}\frac{m_{k}^{2}}{m_{p}^{3}\left( {m_{p} + m_{k}} \right)}
+	\right]
+\end{equation*}
+
+Для поиска распределения по энергии и импульсу нужно при интегрировании  найти выходную скорость и добавить соответствующий вес в гистограмму.
+
+
+
+

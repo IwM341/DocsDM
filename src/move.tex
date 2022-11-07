@@ -1,0 +1,69 @@
+Уравнения движения записываются с помощью эффективного потенциала
+
+\begin{equation}
+\label{eq:move_hamiltonian}	
+E = H = \frac{v_{r}^{2}}{2} + \left( {\phi(r) + \frac{L^{2}}{2r^{2}}} \right) = \frac{v_{r}^{2}}{2} + U_{eff}(L,r)
+\end{equation}
+
+\begin{equation}
+\label{eq:move_equations}
+\begin{cases}
+\dot{r} = \cderiv{H}{v_r}\\
+\dot{v}_r= -\cderiv{H}{r}
+\end{cases}
+\end{equation}
+В гамильтоновой системе фазовый объем равен $dpdq = dtdE$
+\begin{equation}
+	\label{eq:phase_volume_EL}
+	d\Phi = 8\pi^{2}drdv_{r}dL^{2} = 8\pi^{2}TdEdL^2
+\end{equation}
+где $T$ --- период траэктории движения при эенргии $E$ и моменте $L$ 
+
+Решать уравнения будем в безразмерном виде
+\begin{equation}
+	\label{eq:undim}
+	r = Rx,~~v = V_{esc}\nu,~~t = T\tau,~~\phi= -\varphi\frac{V_{esc}^{2}}{2},~~l = xv_{\perp},~~e = \frac{E}{\phi(r = R)}
+\end{equation}
+
+Где $R$ – радиус тела, $V_esc$ – скорость захвата в точке $r = R$, $T=\frac{R}{V_esc}$  – характерное время, $e$ – безразмерная энергия.
+
+\begin{equation}
+	\label{eq:move_equation_undim}
+	\dot{\vec{x}} = \vec{\nu},~~\dot{\vec{\nu}} =  \frac{1}{2}\frac{\partial}{\partial\vec{x}}\varphi
+\end{equation}
+
+\begin{equation}
+	\label{eq:energy_undim}
+e = \varphi - \nu^{2} = \varphi - \nu_{\parallel}^{2} - \frac{l^{2}}{x^{2}} 
+\end{equation}
+
+Период траэктории равен
+\begin{equation}
+\tau\left( {e,l} \right) = {\int_{x_{1}}^{x_{2}}\frac{dx}{ \sqrt{\varphi(x) -e - \frac{l^{2}}{x^{2}}}}}
+\end{equation}
+в точках $x_1$ и $x_2$ корень обнуляется
+
+\begin{enumerate}
+	\item Случай, когда все за планетой
+	\begin{equation}
+		\label{eq:tau_out}
+		\begin{split}
+			\varphi(x) = - \frac{1}{x}\\
+			\tau(e,l) = \frac{\pi}{2\left( e \right)^{\frac{3}{2}}}
+		\end{split}
+	\end{equation}
+	\item Если есть пересечение
+	Внешняя часть интеграла равна
+	\begin{equation}
+		\label{eq:tau_out_eq}
+	\tau_{out}\left( {e,l} \right) = {\int_{1}^{x_{2}}\frac{dx}{\sqrt{\frac{1}{x} - e - \frac{l^{2}}{x^{2}}}~}} = \frac{\pi}{2(e)^{\frac{3}{2}}} + \frac{\sqrt{1 - e - l^{2}}}{(e)^{\frac{1}{2}}} - \frac{{\arctg}\left( \frac{- 1 + 2e}{2\sqrt{e}\sqrt{1 - e - l^{2}}} \right)}{2(e)^{\frac{1}{2}}}
+	\end{equation}
+	Внутренняя часть интеграла вычисляется численно (одновременно находится и траэктория частиц). Потенциал на маленьком отрезке приближенно равен $\varphi = a-bx^2$
+	\begin{equation*}
+		\label{eq:eval_dt}
+		d\tau \approx \int_{x}^{x+dx}\frac{dx}{ \sqrt{a-bx^2 -e - \frac{l^{2}}{x^{2}}}} = \Eval{\cfrac{\arcsin\left(
+				\cfrac{a-e-2bx^2}{\sqrt{(a-e)^2-4bl^2}}
+			\right)}{2\sqrt{b}}}{x}{x+dx}
+	\end{equation*}
+	
+\end{enumerate}
