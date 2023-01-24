@@ -6,14 +6,19 @@
 \end{equation}
 где $T_{in}$ --- часть периода внутри тела, $T_{out}$ --- снаружи, $d\tau$ --- выбор времени 
 
-В итоге получается
-\begin{equation}
+В итоге получается (после обезразмеривания)
+\begin{align*}
 	\label{eq:st}
-	ST = \cfrac{T_{in}}{T_{in}+T_{out}}\cdot d\tau d\vec{n} \cdot \overline{n}_{p}\frac{g_{F}^{2}}{\pi}\frac{m_{k}^{2}}{m_{p}^{3}\left( {m_{p} + m_{k}} \right)}~ \cdot {\widetilde{n}}_{p}f_{B}^{rm}d\omega dc_{1} \cdot \nu' d\vec{n}\,'\Phi\left( q^{2} \right)dF
-\end{equation}
+	ST = \sum{st_i} \cdot \left[\overline{\rho} \frac{G_{F}^{2}}{\pi} m_k \right]
+	\\
+	st_{i} = \frac{T_{in}}{T_{in}+T_{out}}\cdot d\tau d\vec{n} \frac{m_k}{m_k+m_i}d\xi \cdot \widehat{\rho}(r) \widetilde{\rho}_i(r) f_{B}^{rm}d\omega dc_{1} \cdot \nu' d\vec{n}\,'\Phi\left( q^{2} \right)dF
+\end{align*}
+
 
 Интеграл столкновений тоже обезразмерим, выкинув массы и константы
-\begin{equation*}
-	ST = st \cdot\overline{n}_{p} \frac{g_{F}^{2}}{\pi}\frac{m_{k}^{2}}{m_{p}^{3}\left( {m_{p} + m_{k}} \right)}
-\end{equation*}
+
+
+
+Средняя концентрация элемента $i$ ($\cdot\overline{n}_{i}$) выражается через плотность
+
 
