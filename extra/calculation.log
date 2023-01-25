@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.24)  25 JAN 2023 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.24)  25 JAN 2023 12:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**./main.tex
-(main.tex
+**./calculation.tex
+(calculation.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (preamble.tex
+L3 programming layer <2022-09-28> (../preamble.tex
 (D:\Soft\MikTex\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (D:\Soft\MikTex\tex/latex/base\size10.clo
@@ -964,57 +964,88 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (D:\Soft\MikTex\tex/latex/geometry\geometry.cfg))
 (D:\Soft\MikTex\tex/latex/titlesec\titleps.sty
 Package: titleps 2021/07/05 v2.14 Page styles
-)) (math_defs.tex)
+)) (../math_defs.tex)
+(D:\Soft\MikTex\tex/latex/listings\listings.sty
+\lst@mode=\count338
+\lst@gtempboxa=\box68
+\lst@token=\toks44
+\lst@length=\count339
+\lst@currlwidth=\dimen318
+\lst@column=\count340
+\lst@pos=\count341
+\lst@lostspace=\dimen319
+\lst@width=\dimen320
+\lst@newlines=\count342
+\lst@lineno=\count343
+\lst@maxwidth=\dimen321
+
+(D:\Soft\MikTex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count344
+\lst@skipnumbers=\count345
+\lst@framebox=\box69
+)
+(D:\Soft\MikTex\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(D:\Soft\MikTex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(D:\Soft\MikTex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(D:\Soft\MikTex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
 
 LaTeX Warning: Unused global option(s):
     [14pt].
 
-(main.aux
+(calculation.aux)
+\openout1 = `calculation.aux'.
 
-LaTeX Warning: Label `eq:phase_volume_v_r' multiply defined.
-
-)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Info: Redefining \th on input line 3.
-Package hyperref Info: Link coloring OFF on input line 3.
- (main.out) (main.out)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Info: Redefining \th on input line 33.
+Package hyperref Info: Link coloring OFF on input line 33.
+ (calculation.out) (calculation.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `calculation.out'.
 
- (D:\Soft\MikTex\tex/context/base/mkii\supp-pdf.mkii
+
+(D:\Soft\MikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen318
-\scratchbox=\box68
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen319
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count346
+\scratchdimen=\dimen322
+\scratchbox=\box70
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen323
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks46
 ) (D:\Soft\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1023,12 +1054,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (D:\Soft\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+
 
 (D:\Soft\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+
 
 (D:\Soft\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1067,55 +1100,63 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(src/phase_volume.tex) (src/cyclic.tex) (src/move.tex [1
+\c@lstlisting=\count352
 
-{C:/Users/MainUser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (src/cap
-ture_full.tex
-
-LaTeX Warning: Command \cyrs invalid in math mode on input line 4.
+LaTeX Warning: Command \cyrs invalid in math mode on input line 42.
 
 Missing character: There is no ñ in font cmr7!
 
-LaTeX Warning: Command \cyrs invalid in math mode on input line 10.
+LaTeX Warning: Command \cyrs invalid in math mode on input line 47.
 
 Missing character: There is no ñ in font cmr7!
-[2]
 
-LaTeX Warning: Command \cyrs invalid in math mode on input line 51.
+LaTeX Warning: Command \cyrs invalid in math mode on input line 52.
 
 Missing character: There is no ñ in font cmr7!
-) (src/st.tex [3]) (src/inelastic.tex [4]) (src/concentration.tex) [5]
-(main.aux)
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
+66.
+(D:\Soft\MikTex\tex/latex/cyrillic\t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 67.
+<velocity_generator.png, id=10, 481.8pt x 362.10281pt>
+File: velocity_generator.png Graphic file (type png)
+<use velocity_generator.png>
+Package pdftex.def Info: velocity_generator.png  used on input line 93.
+(pdftex.def)             Requested size: 192.71658pt x 144.83855pt.
+ [1
 
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 78FD0B1444FFCA0FECEF9B031C927476;2000.
+{C:/Users/MainUser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./velocit
+y_generator.png (PNG copy)>]
+[2] (calculation.aux)
+Package rerunfilecheck Info: File `calculation.out' has not changed.
+(rerunfilecheck)             Checksum: 6EDE9C93360CBA1A7E5BFFF62387EC22;115.
  ) 
 Here is how much of TeX's memory you used:
- 26248 strings out of 475385
- 504355 string characters out of 2790968
- 847453 words of memory out of 3000000
- 47143 multiletter control sequences out of 15000+600000
- 481261 words of font info for 61 fonts, out of 8000000 for 9000
+ 27981 strings out of 475385
+ 526270 string characters out of 2790968
+ 1266301 words of memory out of 3000000
+ 48861 multiletter control sequences out of 15000+600000
+ 475136 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,17n,93p,786b,603s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lab
-x1000.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\larm1000.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-
-t2a/dpi600\labx1200.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour
-/lh/lh-t2a/dpi600\labx1440.pk><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Soft/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Soft/MikTex/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Soft/MikTex/font
-s/type1/public/amsfonts/cm/cmr5.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts
-/cm/cmr7.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Soft
-/MikTex/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/Soft/MikTex/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (5 pages, 211677 bytes).
+ 90i,8n,93p,438b,1302s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lai
+t0800.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
+600\latt0800.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\tcrm1000.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\MainUser\AppData\Local\MiKTeX\fonts/
+pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk><D:/Soft/MikTex/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:
+/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Soft/MikTex/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Soft/MikT
+ex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Soft/MikTex/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+<D:/Soft/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on calculation.pdf (2 pages, 191706 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
